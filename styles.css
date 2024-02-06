@@ -1,0 +1,25 @@
+body{
+    background-color: #935ea8;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+p{
+    color: blue;
+}
+
+main, header, footer {
+    
+    text-align: center;
+}
+
+main div {
+    display: block
+}
+
+div button{
+    margin: .5rem 0 0 .5rem;
+    border-radius: 1.25rem;
+    padding: .5rem;
+    background-color: white;
+    color: blue;
+}
