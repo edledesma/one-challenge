@@ -7,6 +7,10 @@ p{
     color: blue;
 }
 
+header, footer{
+    background-color: rgb(163, 88, 248);
+}
+
 main, header, footer {
     
     text-align: center;
