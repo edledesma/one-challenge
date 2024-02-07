@@ -12,24 +12,43 @@
 
 <body>
     <header>
-        <p>Cifrador de mensajes</p>
+        <div>
+            <img width="" src="img/data-section.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li>Text</li>
+                <li>Text</li>
+                <li>Text</li>
+            </ul>
+        </div>
     </header>
     <main>
         <div id="cipher-cont">
-            <input type="text" id="messageContent">
-            <br>
-            <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
-            <button id="decryptBtn" onclick="decryptMsg()" ()>Decriptar</button>
+            <div>
+                <textarea id="messageContent" name="messageContent"
+                    placeholder="Ingresar mensaje y seleccionar opcion"></textarea>
+                <textarea id="messageResult" name="messageResult"></textarea>
+            </div>
+            <div id="divBtns">
+                <div id="encBtn">
+                    <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
+                    <button id="decryptBtn" onclick="decryptMsg()" ()>Decriptar</button>
+                </div>
+                <div>
+                    <button id="copyBtn" onclick="copyMsg()" ()>Copiar</button>
+                </div>
+            </div>
         </div>
-        <div id="decipher-cont">
-            <input type="text" id="messageResult">
-            <button id="copyBtn" onclick="copyMsg()" ()>Copiar</button>
-        </div>
+
+
     </main>
     <footer>
-        <p>------------------This is a footer------------------</p>
+        <p>-----------------------------------</p>
     </footer>
     <script src="cipher.js"></script>
 </body>
 
 </html>
+
+<!--  -->
