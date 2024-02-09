@@ -55,6 +55,11 @@ function copyMsg(){
     navigator.clipboard.writeText(secretMsgResult.value);
 }
 
+function clearMsg(){
+    secretMsg.value = ""
+    secretMsgResult.value = "";
+}
+
 // Funcion que controla si existen caracteres especiales o tildes
 
 function checkChar(message){

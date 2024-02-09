@@ -12,43 +12,29 @@
 
 <body>
     <header>
-        <div>
-            <img width="" src="img/data-section.png" alt="">
-        </div>
-        <div>
-            <ul>
-                <li>Text</li>
-                <li>Text</li>
-                <li>Text</li>
-            </ul>
-        </div>
+        <img src="img/alura.svg" alt="">
+        <h1>Challenge ONE - Encriptador de texto con Javascript</h1>
     </header>
-    <main>
-        <div id="cipher-cont">
-            <div>
-                <textarea id="messageContent" name="messageContent"
-                    placeholder="Ingresar mensaje y seleccionar opcion"></textarea>
-                <textarea id="messageResult" name="messageResult"></textarea>
-            </div>
-            <div id="divBtns">
-                <div id="encBtn">
-                    <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
-                    <button id="decryptBtn" onclick="decryptMsg()" ()>Decriptar</button>
-                </div>
-                <div>
-                    <button id="copyBtn" onclick="copyMsg()" ()>Copiar</button>
-                </div>
-            </div>
-        </div>
-
-
-    </main>
+    <div id="sidebar">
+        <p>Bienvenido a nuestro encriptador/decriptador de texto. <br><br>Escriba el mensaje en el area indicada y
+            selecionar la opcion deseada. <br><br>Los acentos o caracteres especiales impediran cualquier operacion.
+        </p>
+    </div>
+    <textarea id="messageContent" name="messageContent" placeholder="Ingresar mensaje y seleccionar una opcion."></textarea>
+    <textarea id="messageResult" name="messageResult" disabled></textarea>
+    <div id="divBtns">
+        <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
+        <button id="decryptBtn" onclick="decryptMsg()" ()>Decriptar</button>
+    </div>
+    <div id="divBtnr">
+        <button id="copyBtn" onclick="copyMsg()" ()>Copiar</button>
+        <button id="copyBtn" onclick="clearMsg()" ()>Limpiar</button>
+    </div>
+    
     <footer>
-        <p>-----------------------------------</p>
+        <p>Emiliano David Ledesma - Image by <a href="https://www.freepik.com/free-vector/abstract-halftone-background_8849465.htm#query=abstract%20background%20purple&position=17&from_view=search&track=ais&uuid=c3057cdf-6351-45d2-b7b9-f44199295b4e">Freepik</a></p>
     </footer>
     <script src="cipher.js"></script>
 </body>
 
 </html>
-
-<!--  -->
