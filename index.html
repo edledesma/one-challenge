@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>One Challenge - Cipher</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <img src="img/alura.svg" alt="">
-        <h1>Challenge ONE - Encriptador de texto con Javascript</h1>
+        <div id="divHead">
+            <img id="logo" src="/img/favicon.svg" alt="logo">
+            <h1>Challenge ONE <br>Encriptador de texto</h1>
+        </div>
+        <img src="img/alura.svg" alt="Oracle Alura logo">
     </header>
     <div id="sidebar">
-        <p>Bienvenido a nuestro encriptador/decriptador de texto. <br><br>Escriba el mensaje en el area indicada y
-            selecionar la opcion deseada. <br><br>Los acentos o caracteres especiales impediran cualquier operacion.
+        <p>Bienvenido a nuestro encriptador/decriptador de texto.<br><br>Escriba el mensaje en el área indicada y
+            seleccionar la opción deseada.<br><br>Los acentos o caracteres especiales impedirán cualquier operación.
         </p>
     </div>
-    <textarea id="messageContent" name="messageContent" placeholder="Ingresar mensaje y seleccionar una opcion."></textarea>
+    <textarea id="messageContent" name="messageContent"
+        placeholder="Ingresar mensaje y seleccionar una opcion."></textarea>
     <textarea id="messageResult" name="messageResult" disabled></textarea>
     <div id="divBtns">
         <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
@@ -30,9 +34,11 @@
         <button id="copyBtn" onclick="copyMsg()" ()>Copiar</button>
         <button id="copyBtn" onclick="clearMsg()" ()>Limpiar</button>
     </div>
-    
+
     <footer>
-        <p>Emiliano David Ledesma - Image by <a href="https://www.freepik.com/free-vector/abstract-halftone-background_8849465.htm#query=abstract%20background%20purple&position=17&from_view=search&track=ais&uuid=c3057cdf-6351-45d2-b7b9-f44199295b4e">Freepik</a></p>
+        <p>Emiliano David Ledesma - Image by <a
+                href="https://www.freepik.com/free-vector/abstract-halftone-background_8849465.htm#query=abstract%20background%20purple&position=17&from_view=search&track=ais&uuid=c3057cdf-6351-45d2-b7b9-f44199295b4e">Freepik</a>
+        </p>
     </footer>
     <script src="cipher.js"></script>
 </body>

@@ -37,6 +37,17 @@ header h1{
     color: #000000;
     text-align: center;
 }
+#logo{
+    width: 30%;
+}
+
+#divHead{
+    display: flex;
+}
+
+#divHead h1{
+    margin-left: 2rem;
+}
 
 #sidebar{
     font-size: 1rem;
