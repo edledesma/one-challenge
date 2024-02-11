@@ -1,5 +1,7 @@
 const secretMsg = document.querySelector('#messageContent')
 const secretMsgResult = document.querySelector('#messageResult')
+const secretMsgBtn = document.querySelector('#divBtnr')
+const imgRest = document.querySelector('#imageHolder')
 const regex = /[^a-z0-9\s]/i; //Expresion regular que contiene los caracteres aceptados
 let msgArray = [];
 let returnString = "";
@@ -7,6 +9,7 @@ let returnString = "";
 // Funcion que encripta los mensajes
 
 function encryptMsg(){
+    hideImg()
     if (checkChar(secretMsg.value) == true){
         secretMsgResult.value = "Caracter invalido detectado"
     }else{
@@ -35,6 +38,7 @@ function encryptMsg(){
 // Funcion que decripta los mensajes
 
 function decryptMsg(){
+    hideImg()
     if (checkChar(secretMsg.value) == true){
         secretMsgResult.value = "Caracter invalido detectado"
     }else{
@@ -55,9 +59,22 @@ function copyMsg(){
     navigator.clipboard.writeText(secretMsgResult.value);
 }
 
+// Funcion que limpia el contenido de los campos
+
 function clearMsg(){
+    imgRest.style.display = 'flex';
     secretMsg.value = ""
     secretMsgResult.value = "";
+    secretMsgResult.style.display="none";
+    secretMsgBtn.style.display="none";
+}
+
+// Funcion que oculta la imagen mientras no exista un mensaje
+
+function hideImg(){
+    imgRest.style.display = 'none';
+    secretMsgResult.style.display="block";
+    secretMsgBtn.style.display="block";
 }
 
 // Funcion que controla si existen caracteres especiales o tildes

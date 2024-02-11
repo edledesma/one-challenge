@@ -25,7 +25,12 @@
     </div>
     <textarea id="messageContent" name="messageContent"
         placeholder="Ingresar mensaje y seleccionar una opcion."></textarea>
-    <textarea id="messageResult" name="messageResult" disabled></textarea>
+    <div id="imageHolder">
+        <img src="img/guy.svg" alt="placeholderImage">
+        <h5>Ningún mensaje fue encontrado. </h5>
+        <h4> Ingresa el texto que desees encriptar o desencriptar. </h4>
+    </div>
+    <textarea id="messageResult" name="messageResult" disabled placeholder="No se encontro ningun mensaje."></textarea>
     <div id="divBtns">
         <button id="encryptBtn" onclick="encryptMsg()">Encriptar</button>
         <button id="decryptBtn" onclick="decryptMsg()" ()>Decriptar</button>

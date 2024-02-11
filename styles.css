@@ -66,9 +66,41 @@ header h1{
     grid-area: messageContent;
 }
 
+#imageHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    font-weight: thin;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 0 0 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    border: #7048b9 solid 5px;
+    margin-right: 2rem;
+    text-align: center;
+    
+}
+
+#imageHolder img{
+    width: 90%;
+    opacity:  70%;
+}
+
+#imageHolder h5,h4{
+    margin-top: 1.5rem;
+    color: rgb(136, 130, 130);
+}
+
+#imageHolder h5{
+    font-weight: bold;
+}
+
 #messageResult{
     margin-right: 2rem;
     grid-area: messageResult;
+    display:none
 }
 
 #divBtns{
@@ -80,6 +112,7 @@ header h1{
     margin-right: 2rem;
     text-align: center;
     grid-area: divBtnr;
+    display:none;
 }
 
 textarea{
@@ -96,7 +129,7 @@ textarea{
 button{
     margin: .5rem 0 1rem .5rem;
     border-radius: 1rem;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     background-color: #c210a0;
     font-size: 1rem;
     border: solid 2px #750960;
@@ -118,8 +151,6 @@ footer{
     background-color: rgba(255,255,255,0.3);
 }
 
-
-
 footer p a{
     text-decoration: none;
     color: white;
@@ -139,8 +170,21 @@ footer p a{
     "footer"
     ;
     }
-    #messageResult,#divBtnr,button,textarea{
+    #messageResult,#divBtnr,#imageHolder,button,textarea{
         margin:0;
+    }
+
+    #messageContent{
+        min-height: 9.375rem;
+    }
+
+    #imageHolder{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #imageHolder img{
+        width: 100px;
     }
     
     header{
