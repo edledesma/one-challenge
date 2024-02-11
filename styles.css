@@ -74,7 +74,7 @@ header h1{
     font-weight: thin;
     color: white;
     font-family: 'Raleway', sans-serif;
-    padding: 1rem 0 0 1rem;
+    
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
     border: #7048b9 solid 5px;
@@ -91,6 +91,7 @@ header h1{
 #imageHolder h5,h4{
     margin-top: 1.5rem;
     color: rgb(136, 130, 130);
+    text-align: center;
 }
 
 #imageHolder h5{
@@ -181,6 +182,12 @@ footer p a{
     #imageHolder{
         flex-direction: row;
         align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #imageHolder h5, #imageHolder h4{
+        margin: 0;
     }
 
     #imageHolder img{
