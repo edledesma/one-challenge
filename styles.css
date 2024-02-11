@@ -51,7 +51,7 @@ header h1{
 
 #sidebar{
     font-size: 1rem;
-    margin: 2.5rem 0 0 2rem;
+    margin: .5rem 0 0 2rem;
     grid-area: sidebar;
 }
 
@@ -215,3 +215,8 @@ footer p a{
     }
 }
 
+@media only screen and (max-height: 740px){
+    body{
+        background-repeat: repeat;
+    }
+}
