@@ -19,6 +19,7 @@ body{
     "sidebar divBtns divBtns divBtnr"
     "footer footer footer footer"
     ;
+    overflow: hidden;
 }
 
 header{
